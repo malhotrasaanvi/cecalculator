@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Here is a list of all available companies</h1>
+  <ul>
+    {% for comp in companies  %}
+    <li>{{comp}}</li>
+    {% endfor %}
+  </ul>
+
+</div>
+{% endblock %}
